@@ -29,4 +29,4 @@ class Encoder:
             packed.append(int(byte, 2))
         
         compressed = bytes([pad_len]) + bytes(packed)
-        return tree.serialize, compressed
+        return tree.serialize(), compressed
