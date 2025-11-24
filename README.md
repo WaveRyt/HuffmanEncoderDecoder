@@ -1,6 +1,6 @@
 # Huffman Encoder & Decoder
 
-This is a command-line application for compressing and decompressing files using **Huffman Coding**
+This is a command-line application for compressing and decompressing files using **Huffman Coding**.
 The program supports encoding any file type into a compact binary format and decoding it back to its exact original form.
 
 ---
