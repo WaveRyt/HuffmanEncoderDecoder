@@ -33,11 +33,11 @@ The program supports encoding any file type into a compact binary format and dec
 
 Each encoded output file has the following binary structure:
 
-```
+
 +----------------------+----------------------+-------------------------+
 | 4 bytes: tree length |   serialized tree    |   Data                  |
 +----------------------+----------------------+-------------------------+
-```
+
 
 Where:
 
@@ -62,6 +62,8 @@ python src/main.py encode input_file output.huff
 
 
 ### Decode a File
+
+From the project root:
 
 ```bash
 python src/main.py decode input.huff output_file
