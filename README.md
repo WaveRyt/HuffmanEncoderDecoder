@@ -34,9 +34,7 @@ The program supports encoding any file type into a compact binary format and dec
 Each encoded output file has the following binary structure:
 
 
-+----------------------+----------------------+-------------------------+
 | 4 bytes: tree length |   serialized tree    |   Data                  |
-+----------------------+----------------------+-------------------------+
 
 
 Where:
