@@ -35,14 +35,14 @@ Each encoded output file has the following binary structure:
 
 ```
 +----------------------+----------------------+-------------------------+
-| 4 bytes: tree length |   serialized tree    |   Data                  |
+| 4 bytes: tree length |   serialized tree    |   Encoded Data          |
 +----------------------+----------------------+-------------------------+
 ```
 
 Where:
 
 - Serialized tree is produced using a preorder traversal  
-- Data consists of:
+- Encoded Data consists of:
   - 1 byte: number of padding bits  
   - Packed Huffman bitstream (converted to bytes)
 
