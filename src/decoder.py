@@ -16,7 +16,7 @@ class Decoder:
         
         tree = HuffmanTree.deserialize(tree_serialized)
         out = bytearray()
-        node = tree.root()
+        node = tree.root
 
         if node is None:
             return b''
