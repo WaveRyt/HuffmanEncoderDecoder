@@ -23,8 +23,8 @@ The program supports encoding any file type into a compact binary format and dec
 | `tree.py` | Huffman tree construction, serialization, and deserialization |
 | `encoder.py` | Builds the frequency map, Huffman tree, and encodes raw byte data |
 | `decoder.py` | Reconstructs the Huffman tree and decodes compressed data |
-| `filehandling.py` | High-level file encoder/decoder that works with any file type |
-| `main.py` | CLI entry point for encoding/decoding files |
+| `filehandling.py` | File encoder/decoder that works with any file type |
+| `main.py` | Entry point for encoding/decoding files |
 | `tests/test_huffman.py` | Pytest-based unit tests for compression and decompression logic |
 
 ---
@@ -35,7 +35,7 @@ Each encoded output file has the following binary structure:
 
 ```
 +----------------------+----------------------+-------------------------+
-| 4 bytes: tree length |   serialized tree    |   Encoded data (padding length + data) |
+| 4 bytes: tree length |   serialized tree    |   Encoded data          |
 +----------------------+----------------------+-------------------------+
 ```
 
