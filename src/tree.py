@@ -20,7 +20,7 @@ class HuffmanTree:
         
         if len(heap) == 1:
             single = heapq.heappop(heap)
-            self.root = None(single.freq, None, single, None)
+            self.root = Node(single.freq, None, single, None)
             self._generate()
 
             return
@@ -102,7 +102,7 @@ class HuffmanTree:
 
         if len(data) == 0:
             tree.root = None
-            
+
             return tree
         
         tree.root = dfs()
