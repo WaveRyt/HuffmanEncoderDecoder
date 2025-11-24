@@ -15,7 +15,7 @@ def file_encoder(in_path: str, out_path: str) -> None:
         f.write(compressed)
     
 def file_decoder(in_path: str, out_path: str) -> None:
-    with open(out_path, 'rb') as f:
+    with open(in_path, 'rb') as f:
         raw = f.read()
     
     if len(raw) < 4:
